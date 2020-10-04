@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: "Learn one, do one, then teach teach one." 
+subtitle: "Learn one, do one, then teach one." 
 ---
 
 I'm a motivated and fastidious techie with 3 years IT-related experience, studying topics in computer networking and security while attending George Mason University for a Bachelors of Science in Information Systems. Looking to gain experience relevant to system administration, network security, and systems engineering.
