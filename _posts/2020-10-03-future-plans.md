@@ -2,9 +2,9 @@
 layout: post
 title: Plans for the Future
 subtitle: I like to have a plan and to be prepared.
-cover-img: /assets/img/nasa-goddard.png
+cover-img: /assets/img/path.png
 thumbnail-img: /assets/img/nasa-goddard.png
-share-img: /assets/img/nasa-goddard.png
+share-img: /assets/img/path.png
 tags: [career, future plans]
 comments: false
 ---
