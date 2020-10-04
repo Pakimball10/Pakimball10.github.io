@@ -103,8 +103,8 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-navbar-img: "/assets/img/retina_wood.png"
-footer-img: "/assets/img/retina_wood.png"
+navbar-img: "/assets/img/white.png"
+footer-img: "/assets/img/white.png"
 page-img: "/assets/img/shattered.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
@@ -220,6 +220,9 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
+
+
+favicon: "assets/img/favicon.ico"
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
