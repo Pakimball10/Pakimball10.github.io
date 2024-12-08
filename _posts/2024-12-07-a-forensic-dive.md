@@ -8,7 +8,7 @@ comments: false
 
 Internet-of-things (IoT) apps are so commonplace today that they can contain a wealth of information of their users. From smart light bulbs to refrigerators and washing machines, there’s an app to help control everything in your home. To us forensic examiners, this can be a goldmine in proving the coming and goings of a suspect. Artifacts found in IoT apps can make a difference in finding out the suspect’s whereabouts.
 For instance, smart light bulbs can be put onto a schedule, say on from 5:00PM to 11:00PM. This means you can expect that the bulbs would be on the “on” status, but if they are manually set to “off” that may be significant. Additionally, things like a smart door lock can be used as corroborating evidence, if it holds a log of when it is in the locked position.
-To explore this, we will look a popular IoT mobile app called Geeni, bundle ID com.merkuryinnovations.geeni.
+To explore this, we will look a popular IoT mobile app called Geeni, bundle ID ***com.merkuryinnovations.geeni.***
 
 WHAT IS THE GEENI APP?
 ---------------
@@ -39,7 +39,11 @@ The Geeni App has several folders that contain a number of databases, javascript
 
 There appears to also be config files for integration with Tuya Client, an all-in-one IoT platform. Further analysis shows that an XML file contains the email and password for the user account associated with Geeni. It is worth noting that during my analysis, the password string appeared as an authorization token.
 
+```
+{
 /data/data/com.merkuryinnovations.geeni/shared_prefs/KlaviyoSDKPreferences.xml
+}
+``` 
 
 Beyond this, there was not many other personal information that would help identify the user. A lot of the .json and .js files were specific to the storefront, and that seemed to be the majority of the application. Otherwise, the actual functional parts like turning the lights on/off, or Wi-Fi SSID information was either well obfuscated or not available through local files. There were some files that appeared to be logs but could only be viewed with a MMAP system call. These were ultimately files that appeared to generate logs, not the logs themself. The cache folders also did not have anything forensically significant. However, there was a database folder that contained cookies from the webframe utilized by the store. This store would track the user and their cart, syncing a UNIX timestamp for when the app was last opened. While not a “smoking gun”, this could serve as an important piece of evidence showing when the app was last used to control IoT devices.
 
