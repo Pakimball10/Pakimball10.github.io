@@ -5,9 +5,8 @@ subtitle:
 tags: [blog, forensics, dfor, graduate school] 
 comments: false
 ---
-<p align="center">
 ![Lightbulb](/assets/img/generic-lightbulb.png)
-</p>
+
 Internet-of-things (IoT) apps are so commonplace today that they can contain a wealth of information of their users. From smart light bulbs to refrigerators and washing machines, there’s an app to help control everything in your home. To us forensic examiners, this can be a goldmine in proving the coming and goings of a suspect. Artifacts found in IoT apps can make a difference in finding out the suspect’s whereabouts.
 For instance, smart light bulbs can be put onto a schedule, say on from 5:00PM to 11:00PM. This means you can expect that the bulbs would be on the “on” status, but if they are manually set to “off” that may be significant. Additionally, things like a smart door lock can be used as corroborating evidence, if it holds a log of when it is in the locked position.
 To explore this, we will look a popular IoT mobile app called Geeni, bundle ID ***com.merkuryinnovations.geeni.***
