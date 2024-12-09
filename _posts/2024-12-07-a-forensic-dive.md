@@ -13,6 +13,7 @@ To explore this, we will look a popular IoT mobile app called Geeni, bundle ID *
 
 WHAT IS THE GEENI APP?
 ---------------
+
 ![Play Store](/assets/img/play-store.png)
 
 
@@ -39,9 +40,8 @@ developer tools by tapping the Android build number 7 times, then enable USB deb
 
 WHAT WAS FOUND?
 ---------------
-![dir2](/assets/img/dir2.png)
 
-![dir1](/assets/img/dir1.png)
+![dir](/assets/img/dir.png)
 
 
 The Geeni App has several folders that contain a number of databases, javascript files, and .json files. The other miscellaneous files are images and additional cached files from their built-in webstore. There are some databases that are encrypted, but there are some unencrypted ones that provide a good amount of user information.
