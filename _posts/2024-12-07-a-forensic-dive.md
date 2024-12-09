@@ -7,7 +7,7 @@ comments: false
 ---
 ![Lightbulb](/assets/img/generic-lightbulb.png)
 
-Internet-of-things (IoT) apps are so commonplace today that they can contain a wealth of information of their users. From smart light bulbs to refrigerators and washing machines, there’s an app to help control everything in your home. To us forensic examiners, this can be a goldmine in proving the coming and goings of a suspect. Artifacts found in IoT apps can make a difference in finding out the suspect’s whereabouts.
+Internet-of-things (IoT) apps are so commonplace today that they can contain a wealth of information of their users. From smart light bulbs to refrigerators and washing machines, there’s an app to help control everything in your home. To us forensic examiners, this can be a goldmine in proving the coming and goings of a suspect. Artifacts found in IoT apps can make a difference in finding out the their whereabouts.
 For instance, smart light bulbs can be put onto a schedule, say on from 5:00PM to 11:00PM. This means you can expect that the bulbs would be on the “on” status, but if they are manually set to “off” that may be significant. Additionally, things like a smart door lock can be used as corroborating evidence, if it holds a log of when it is in the locked position.
 To explore this, we will look a popular IoT mobile app called Geeni, bundle ID ***com.merkuryinnovations.geeni.***
 
@@ -19,8 +19,7 @@ WHAT IS THE GEENI APP?
 
 The Geeni app serves as an IoT control center for the user’s home. It allows them to control their smart light bulbs, video cameras, and surge protectors. It can change the colors of the light bulbs or set them on a specific schedule. You can also remotely view your video camera and record, screenshot, or set it to alert you when motion is detected. It has additional integrations for their built-in shop and promotional data. They also have a notifications section for things like if a scheduled task has failed, or if a device has logged into your active account.
 
-On the Play Store, Geeni has over 5 million downloads, making it a prolific IoT application. Examiners can expect to see this in the wild on various mobile devices such as tablets and smartphones. Google reports that this application encrypts the data sent between the user and developer in transit, but that location and other personal information is still collected by the app itself. The app receives semi-regular security updates, with the last update
-being on October 9th, 2024. The most recent version is 4.0.1 as reported on their Play Store page which can be found [here](https://play.google.com/store/apps/details?id=com.merkuryinnovations.geeni).
+On the Play Store, Geeni has over 5 million downloads, making it a prolific IoT application. Examiners can expect to see this in the wild on various mobile devices such as tablets and smartphones. Google reports that this application encrypts the data sent between the user and developer in transit, but that location and other personal information is still collected by the app itself. The app receives semi-regular security updates, with the last update being on October 9th, 2024. The most recent version is 4.0.1 as reported on their Play Store page which can be found [here](https://play.google.com/store/apps/details?id=com.merkuryinnovations.geeni).
 
 
 TEST ACQUSITION IN CELLEBRITE
