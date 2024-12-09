@@ -56,9 +56,16 @@ There appears to also be config files for integration with Tuya Client, an all-i
 /data/data/com.merkuryinnovations.geeni/shared_prefs/KlaviyoSDKPreferences.xml
 ``` 
 
+![Database](/assets/img/db.png)
+
 Beyond this, there was not many other personal information that would help identify the user. A lot of the .json and .js files were specific to the storefront, and that seemed to be the majority of the application. Otherwise, the actual functional parts like turning the lights on/off, or Wi-Fi SSID information was either well obfuscated or not available through local files. There were some files that appeared to be logs but could only be viewed with a MMAP system call. These were ultimately files that appeared to generate logs, not the logs themself. The cache folders also did not have anything forensically significant. However, there was a database folder that contained cookies from the webframe utilized by the store. This store would track the user and their cart, syncing a UNIX timestamp for when the app was last opened. While not a “smoking gun”, this could serve as an important piece of evidence showing when the app was last used to control IoT devices.
 
-![Database](/assets/img/db.png)
+![Database-Metadata](/assets/img/db-metadata.png)
+![Database-Metadata](/assets/img/hex.png)
+
+
+There are two files, **scene-db** and **thingsmart_stat_encrypted.db** which appear to have data, but are both encrypted. These are files sent between Merkury Innovations and the Geeni app for things like scene data, the color of the users smart lightbulbs. While the file doesn’t provide much information on their own, some of the metadata provides a modified time, which can help identify when the Geeni app was installed. Several of the databases have SQLite queries, but nothing significant in the file itself. 
+
 
 CONCLUSION AND FURTHER THOUGHTS
 ---------------
