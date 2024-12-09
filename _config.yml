@@ -15,7 +15,7 @@ author: Patrick Alan Kimball
 
 navbar-links:
   About Me: "aboutme"
-  My Resume: "my-resume"
+  #My Resume: "my-resume"
 
 # --- Logo --- #
 
